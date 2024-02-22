@@ -1,0 +1,72 @@
+FROM ubuntu:20.04
+
+
+RUN groupadd mygroup
+RUN useradd  -g mygroup -ms /bin/bash joaquin
+
+RUN apt-get update
+RUN apt-get install -y ca-certificates
+RUN apt-get purge systemd
+
+RUN apt-get install -y systemd
+RUN apt-get install -y python3
+RUN apt-get install -y python3-pip
+RUN apt-get install -y python3-setuptools  python3-dev python3-distutils 
+RUN apt-get install -y usbutils 
+RUN apt-get install -y mlocate
+#
+# installing pyvisa
+RUN pip3 install  pyvisa 
+RUN pip3 install  pyvisa-py 
+RUN pip3 install  gpib-ctypes
+RUN pip3 install  pyusb
+RUN pip3 install  pyserial python-usbtmc psutil zeroconf 
+
+
+# https://gist.github.com/ochococo/8362414fff28fa593bc8f368ba94d46a#checkout-the-linux-gpib-to-user-home-dir
+
+
+# installing ni-visa
+#COPY libs/ni-ubuntu2204-drivers-2023Q3.deb /home/joaquin/temp/ni-driver.deb
+COPY libs/ni-ubuntu2004-drivers-2023Q3.deb /home/joaquin/temp/ni-driver.deb
+RUN apt-get install /home/joaquin/temp/ni-driver.deb
+RUN apt-get  update
+RUN apt install -y ni-visa
+#RUN apt install -y ni-hwcfg-utility
+RUN dkms autoinstall
+
+
+
+
+#other libs : pyserial python-usbtmc psutil zeroconf libgpib-dev
+
+RUN apt-get  install -y jed
+# time synch
+RUN ln -sf /usr/share/zoneinfo/Europe/Madrid /etc/localtime
+RUN apt-get clean
+RUN apt-get autoremove
+
+
+RUN apt-get install -y subversion make
+
+
+# installing linux-gpib
+#RUN set DEBIAN_FRONTEND=noninteractive  apt-get install -y tk-dev build-essential texinfo texi2html libcwidget-dev libncurses5-dev libx11-dev binutils-dev bison flex libusb-1.0-0 libusb-dev libmpfr-dev libexpat1-dev tofrodos subversion autoconf automake libtool mercurial
+
+#RUN mkdir /home/joaquin/temp
+#RUN mkdir /home/joaquin/shared
+
+#RUN svn checkout svn://svn.code.sf.net/p/linux-gpib/code/trunk /home/joaquin/temp/linux-gpib-code
+
+#WORKDIR /home/joaquin/temp/linux-gpib-code/linux-gpib-kernel
+#RUN make 
+#RUN make install
+
+#WORKDIR /home/joaquin/temp/linux-gpib-code/linux-gpib-user 
+#RUN make 
+#RUN make install
+
+#RUN ldconfig
+
+#RUN python3 /home/joaquin/temp/linux-gpib-code/linux-gpib-user/language/python/setup.py install
+

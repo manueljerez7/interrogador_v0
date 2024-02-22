@@ -1,0 +1,71 @@
+INFO:root:Openning session
+DEBUG:pyvisa:SerialSession was correctly imported.
+DEBUG:pyvisa:USBSession and USBRawSession were not imported No backend available.
+DEBUG:pyvisa:TCPIPSession was correctly imported.
+DEBUG:pyvisa:GPIBSession was not imported 'MockGPIB' object is not subscriptable.
+DEBUG:pyvisa:Created library wrapper for py
+DEBUG:pyvisa:Created ResourceManager with session 1008311
+DEBUG:pyvisa:Closing ResourceManager (session: 1008311)
+INFO:root:Openning session
+DEBUG:pyvisa:SerialSession was correctly imported.
+DEBUG:pyvisa:USBSession and USBRawSession were not imported No backend available.
+DEBUG:pyvisa:TCPIPSession was correctly imported.
+DEBUG:pyvisa:GPIBSession was not imported 'MockGPIB' object is not subscriptable.
+DEBUG:pyvisa:Created library wrapper for py
+DEBUG:pyvisa:Created ResourceManager with session 1483044
+DEBUG:pyvisa:Closing ResourceManager (session: 1483044)
+INFO:root:Openning session
+DEBUG:pyvisa:SerialSession was correctly imported.
+DEBUG:pyvisa:USBSession and USBRawSession were not imported No backend available.
+DEBUG:pyvisa:TCPIPSession was correctly imported.
+DEBUG:pyvisa:GPIBSession was not imported 'MockGPIB' object is not subscriptable.
+DEBUG:pyvisa:Created library wrapper for py
+DEBUG:pyvisa:Created ResourceManager with session 5894957
+DEBUG:pyvisa:Closing ResourceManager (session: 5894957)
+INFO:root:Openning session
+DEBUG:pyvisa:SerialSession was correctly imported.
+DEBUG:pyvisa:USBSession and USBRawSession were not imported No backend available.
+DEBUG:pyvisa:TCPIPSession was correctly imported.
+DEBUG:pyvisa:GPIBSession was not imported 'MockGPIB' object is not subscriptable.
+DEBUG:pyvisa:Created library wrapper for py
+DEBUG:pyvisa:Created ResourceManager with session 8065886
+DEBUG:pyvisa:Closing ResourceManager (session: 8065886)
+INFO:root:Openning session
+DEBUG:pyvisa:SerialSession was correctly imported.
+DEBUG:pyvisa:USBSession and USBRawSession were not imported No backend available.
+DEBUG:pyvisa:TCPIPSession was correctly imported.
+DEBUG:pyvisa:GPIBSession was not imported 'MockGPIB' object is not subscriptable.
+DEBUG:pyvisa:Created library wrapper for py
+DEBUG:pyvisa:Created ResourceManager with session 9316147
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:pyvisa:Closing ResourceManager (session: 9316147)
+INFO:root:Openning session
+DEBUG:pyvisa:SerialSession was correctly imported.
+DEBUG:pyvisa:USBSession and USBRawSession were not imported No backend available.
+DEBUG:pyvisa:TCPIPSession was correctly imported.
+DEBUG:pyvisa:GPIBSession was not imported 'MockGPIB' object is not subscriptable.
+DEBUG:pyvisa:Created library wrapper for py
+DEBUG:pyvisa:Created ResourceManager with session 8929245
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:pyvisa:Closing ResourceManager (session: 8929245)
+INFO:root:Openning session
+DEBUG:pyvisa:SerialSession was correctly imported.
+DEBUG:pyvisa:USBSession and USBRawSession were not imported No backend available.
+DEBUG:pyvisa:TCPIPSession was correctly imported.
+DEBUG:pyvisa:GPIBSession was not imported 'MockGPIB' object is not subscriptable.
+DEBUG:pyvisa:Created library wrapper for py
+DEBUG:pyvisa:Created ResourceManager with session 8032071
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:pyvisa:Closing ResourceManager (session: 8032071)
+INFO:root:Openning session
+DEBUG:pyvisa:SerialSession was correctly imported.
+DEBUG:pyvisa:USBSession and USBRawSession were not imported No backend available.
+DEBUG:pyvisa:TCPIPSession was correctly imported.
+DEBUG:pyvisa:GPIBSession was not imported 'MockGPIB' object is not subscriptable.
+DEBUG:pyvisa:Created library wrapper for py
+DEBUG:pyvisa:Created ResourceManager with session 9686120
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:pyvisa:Closing ResourceManager (session: 9686120)
+
+
+Logs intentando abrir con el fichero original

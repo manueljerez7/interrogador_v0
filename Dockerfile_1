@@ -1,0 +1,20 @@
+FROM ubuntu:latest
+
+RUN apt-get update
+RUN apt-get install -y python3 python3-pip
+RUn apt-get install -y usbutils
+
+RUN pip install  pyvisa pyvisa-py pyusb pyserial python-usbtmc gpib-ctypes
+
+RUN pip install psutil zeroconf
+
+
+
+
+RUN apt-get -y install jed
+
+RUN ln -sf /usr/share/zoneinfo/Europe/Madrid /etc/localtime
+
+RUN groupadd -g 1000 mygroup
+RUN useradd -u 1000 -g mygroup -ms /bin/bash joaquin
+

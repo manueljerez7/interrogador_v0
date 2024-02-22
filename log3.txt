@@ -1,0 +1,29 @@
+INFO:root:Openning session
+DEBUG:pyvisa:SerialSession was correctly imported.
+DEBUG:pyvisa:USBSession and USBRawSession were not imported No backend available.
+DEBUG:pyvisa:TCPIPSession was correctly imported.
+DEBUG:pyvisa:GPIBSession was not imported 'MockGPIB' object is not subscriptable.
+DEBUG:pyvisa:Created library wrapper for py
+DEBUG:pyvisa:Created ResourceManager with session 4458544
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 5232025
+ERROR:root:Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\manue\OneDrive\Documentos\Proyecto CATION\Pruebas CITIUS (Array antiguo)\interrogador_v0\test_socket.py", line 266, in <module>
+    fs22.check()
+    ^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'check'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\manue\OneDrive\Documentos\Proyecto CATION\Pruebas CITIUS (Array antiguo)\interrogador_v0\test_socket.py", line 113, in __exit__
+    logging.info("Closing {}}".format(self.meter_id))
+                                      ^^^^^^^^^^^^^
+AttributeError: 'meter' object has no attribute 'meter_id'
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:pyvisa:Closing ResourceManager (session: 4458544)
+
+
+Log abriendo con IP y puerto, pero tiene NoneType
