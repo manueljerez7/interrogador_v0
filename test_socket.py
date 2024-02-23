@@ -98,7 +98,8 @@ class meter:
     ):
         try:
             self.inst_handler = visa_handler.open_resource('TCPIP::10.0.0.10::3500::SOCKET')
-            print(self.inst_handler)
+            self.inst_handler.timeout = 5000
+            self.inst_handler.read_termination = '\r'
         except Exception as e:
             print(e)
             logging.error(
@@ -118,11 +119,11 @@ class meter:
             logging.error("Exception occurred", exc_info=True)
 
     def write(self, cmd):
-
+        self.__enter__()
         logging.debug("Sending command {} to meter".format(cmd))
 
         try:
-            self.inst_handler.write(cmd)
+            self.inst_handler.query(cmd)
             time.sleep(DELAY)
 
         except Exception as e:
@@ -130,7 +131,6 @@ class meter:
             status = False
 
     def query(self, cmd):
-
         try:
             response = self.inst_handler.query(cmd)
 
@@ -166,6 +166,8 @@ class meter:
         return str(len(sensors_lambdas)) + ":" + ",".join(formulas)
 
     def configure(self, config_dict):
+        self.__enter__()
+
         logging.info("Configuring meter")
 
         cmd_sequence = [
@@ -179,25 +181,27 @@ class meter:
             ":ACQU:CONF:RANG:FOR:0:".format(
                 self.conv_formula(config_dict["CH0"]["sensors"])
             ),
-            ":ACQU:STOR",
+            ":ACQU:STAR",
             ":ACQU:STOP",
         ]
 
         # preparar la lista de configuracion
         for each_command in cmd_sequence:
-            self.write(each_command)
+            self.query(each_command)
 
     def check(self):
+        self.__enter__()
+
         logging.info("Checking configuration ... ")
         cmd_sequence = [
-            "IDEN?",
+            ":IDEN?",
             ":STAT?",
             ":ACQU:STAR",
             ":RECA",
             ":ACQU:CONF:THRE:CHAN:0?",
-            ":ACQU:CONF:RANG:WAVE:0?"
-            ":ACQU:CONF:RANG:FORM:0?"
-            ":ACQU:CONF:RANG:STAT:0?"
+            ":ACQU:CONF:RANG:WAVE:0?",
+            ":ACQU:CONF:RANG:FORM:0?",
+            ":ACQU:CONF:RANG:STAT?",
             ":ACQU:STOP",
         ]
 
@@ -275,10 +279,10 @@ for sample_index in range(args.samples):
     fs22.write(":ACQU:STAR")
     fs22.write(":ACQU:RECA")
 
-    #traces_list.append(fs22.query(":ACQU:OSAT:CHAN:0?").replace(":ACK:", ""))
-    #temp_list.append(fs22.query(":ACQU:ENGI:CHAN:0?").replace(":ACK:", ""))
-    #peaks_loc_list.append(fs22.query(":ACQU:POWE:CHAN:0?").replace(":ACK:", ""))
-    #peak_val_list.append(fs22.query(":ACQU:WAVE:CHAN:0?").replace(":ACK:", ""))
+    traces_list.append(fs22.query(":ACQU:OSAT:CHAN:0?").replace(":ACK:", ""))
+    temp_list.append(fs22.query(":ACQU:ENGI:CHAN:0?").replace(":ACK:", ""))
+    peaks_loc_list.append(fs22.query(":ACQU:POWE:CHAN:0?").replace(":ACK:", ""))
+    peak_val_list.append(fs22.query(":ACQU:WAVE:CHAN:0?").replace(":ACK:", ""))
 
     fs22.write(":ACQU:STOP")
 
