@@ -4,7 +4,7 @@
 
 import pyvisa  # for scpi
 import time  # for sleep
-from zip import zip
+from readTraces import gen_csv_zip
 import logging
 import csv
 import configparser
@@ -309,7 +309,7 @@ with open(str(args.temperature) + "_peaks", "w", newline="") as csvfile:
 
 visa_handler.close()
 
-zip(str(args.temperature)+'.zip',
+gen_csv_zip(str(args.temperature),
     [str(args.temperature) + "_os",
      str(args.temperature) + "_temp",
      str(args.temperature) + "_loc",

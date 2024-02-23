@@ -1,5 +1,7 @@
 import csv
 import matplotlib.pyplot as plt
+from zip import zip
+import os
 
 def get_nums(lista_caracteres):
     resultado = []
@@ -27,30 +29,35 @@ def get_nums(lista_caracteres):
     return resultado
 
 
-# Ruta del archivo
-archivo_ruta = '23.0_temp'  # Reemplaza con la ruta correcta de tu archivo
 
-# Lista para almacenar arrays de números completos
-numeros_completos = []
+def gen_csv_zip(temp,ficheros_brutos):
+    # Ruta del archivo
+    ficheros_csv = []
+    for archivo_ruta in ficheros_brutos:
 
-# Utilizar csv.reader para leer el archivo
-with open(archivo_ruta, newline='') as archivo:
-    reader = csv.reader(archivo)
-    for fila in reader:
-        # Procesar cada fila para obtener un array de números completos
-        valores = [valor.replace('"', '') for valor in fila[1:] if valor != '']
-        numeros_completos_fila = []
-        fila.remove('\n')
-        cadena = "".join([str(i) for i in fila])
-        numeros_completos.append(get_nums(cadena))
+        # Lista para almacenar arrays de números completos
+        numeros_completos = []
 
-arrays_canales = []
+        # Utilizar csv.reader para leer el archivo
+        with open(archivo_ruta, newline='') as archivo:
+            reader = csv.reader(archivo)
+            for fila in reader:
+                # Procesar cada fila para obtener un array de números completos
+                valores = [valor.replace('"', '') for valor in fila[1:] if valor != '']
+                numeros_completos_fila = []
+                fila.remove('\n')
+                cadena = "".join([str(i) for i in fila])
+                numeros_completos.append(get_nums(cadena))
 
-for i in range(len(numeros_completos[0])):
-    # Crear una nueva lista para la posición i
-    nueva_lista = [sublista[i] for sublista in numeros_completos]
-    arrays_canales.append(nueva_lista)
+        # Escribir la lista de listas en el archivo CSV
+        with open(archivo_ruta+'.csv', 'w', newline='') as archivo_csv:
+            escritor_csv = csv.writer(archivo_csv)
+            escritor_csv.writerows(numeros_completos)
+            ficheros_csv.append(archivo_ruta+'.csv')
 
-plt.plot(arrays_canales[0])
-plt.plot(arrays_canales[1])
-plt.show()
+    #Tenemos los 4 ficheros csv y los 4 brutos. Queremos borrar los brutos y hacer un zip y borrar los csv
+    zip(temp,ficheros_csv)
+
+    # Eliminar los archivos originales después de crear el zip
+    for archivo in ficheros_brutos:
+        os.remove(archivo)
