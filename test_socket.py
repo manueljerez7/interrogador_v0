@@ -4,7 +4,7 @@
 
 import pyvisa  # for scpi
 import time  # for sleep
-
+from zip import zip
 import logging
 import csv
 import configparser
@@ -281,8 +281,8 @@ for sample_index in range(args.samples):
 
     traces_list.append(fs22.query(":ACQU:OSAT:CHAN:0?").replace(":ACK:", ""))
     temp_list.append(fs22.query(":ACQU:ENGI:CHAN:0?").replace(":ACK:", ""))
-    peaks_loc_list.append(fs22.query(":ACQU:POWE:CHAN:0?").replace(":ACK:", ""))
-    peak_val_list.append(fs22.query(":ACQU:WAVE:CHAN:0?").replace(":ACK:", ""))
+    peak_val_list.append(fs22.query(":ACQU:POWE:CHAN:0?").replace(":ACK:", ""))
+    peaks_loc_list.append(fs22.query(":ACQU:WAVE:CHAN:0?").replace(":ACK:", ""))
 
     fs22.write(":ACQU:STOP")
 
@@ -308,3 +308,9 @@ with open(str(args.temperature) + "_peaks", "w", newline="") as csvfile:
 
 
 visa_handler.close()
+
+zip(str(args.temperature)+'.zip',
+    [str(args.temperature) + "_os",
+     str(args.temperature) + "_temp",
+     str(args.temperature) + "_loc",
+     str(args.temperature) + "_peaks"])

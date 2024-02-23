@@ -1,0 +1,16 @@
+INFO:root:Openning session
+DEBUG:pyvisa:SerialSession was correctly imported.
+DEBUG:pyvisa:USBSession and USBRawSession were not imported No backend available.
+DEBUG:pyvisa:TCPIPSession was correctly imported.
+DEBUG:pyvisa:GPIBSession was not imported 'MockGPIB' object is not subscriptable.
+DEBUG:pyvisa:Created library wrapper for py
+DEBUG:pyvisa:Created ResourceManager with session 8385352
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 8501791
+INFO:root:Closing 10.0.0.10
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:pyvisa:Closing ResourceManager (session: 8385352)
+
+
+Parece que el problema es que no se encuentra el metodo write del equipo (definido por nosotros)
