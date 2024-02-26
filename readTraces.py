@@ -1,7 +1,28 @@
 import csv
 import matplotlib.pyplot as plt
-from zip import zip
 import os
+import zipfile
+
+#----------------------------------------------------------------------------------
+#Función zip: Comprimir los ficheros csv y eliminarlos
+#----------------------------------------------------------------------------------
+
+def zip(nombre_zip,archivos_a_zippear):
+    # Crear el archivo zip
+    nombre=nombre_zip+".zip"
+    with zipfile.ZipFile(nombre, 'w') as zip_file:
+        for archivo in archivos_a_zippear:
+            # Añadir cada archivo al zip
+            zip_file.write(archivo)
+
+    # Eliminar los archivos originales después de crear el zip
+    for archivo in archivos_a_zippear:
+        os.remove(archivo)
+
+#----------------------------------------------------------------------------------
+#Función get_nums: Leer lista de caracteres del braggmeter 
+# y convertir a lista de float
+#----------------------------------------------------------------------------------
 
 def get_nums(lista_caracteres):
     resultado = []
@@ -29,6 +50,9 @@ def get_nums(lista_caracteres):
     return resultado
 
 
+#----------------------------------------------------------------------------------
+#Función gen_csv_zip: Generar fichero zip con nombre y lista de ficheros indicados
+#----------------------------------------------------------------------------------
 
 def gen_csv_zip(temp,ficheros_brutos):
     # Ruta del archivo

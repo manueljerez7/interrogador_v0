@@ -8340,3 +8340,33 @@ DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status 
 DEBUG:pyvisa:Closing ResourceManager (session: 2733518)
 DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
 DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+INFO:root:Openning session
+DEBUG:pyvisa:SerialSession was correctly imported.
+DEBUG:pyvisa:USBSession and USBRawSession were not imported No backend available.
+DEBUG:pyvisa:TCPIPSession was correctly imported.
+DEBUG:pyvisa:GPIBSession was not imported 'MockGPIB' object is not subscriptable.
+DEBUG:pyvisa:Created library wrapper for py
+DEBUG:pyvisa:Created ResourceManager with session 1257503
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+ERROR:root:Exception occurred when openning meter 10.0.0.10
+Traceback (most recent call last):
+  File "C:\Users\manue\OneDrive\Documentos\Proyecto CATION\Pruebas CITIUS (Array antiguo)\interrogador_v0\test_socket.py", line 100, in __enter__
+    self.inst_handler = visa_handler.open_resource('TCPIP::10.0.0.10::3500::SOCKET')
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manue\miniconda3\Lib\site-packages\pyvisa\highlevel.py", line 3292, in open_resource
+    res.open(access_mode, open_timeout)
+  File "C:\Users\manue\miniconda3\Lib\site-packages\pyvisa\resources\resource.py", line 281, in open
+    self.session, status = self._resource_manager.open_bare_resource(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manue\miniconda3\Lib\site-packages\pyvisa\highlevel.py", line 3217, in open_bare_resource
+    return self.visalib.open(self.session, resource_name, access_mode, open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manue\miniconda3\Lib\site-packages\pyvisa_py\highlevel.py", line 167, in open
+    sess = cls(session, resource_name, parsed, open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manue\miniconda3\Lib\site-packages\pyvisa_py\sessions.py", line 321, in __init__
+    self.after_parsing()
+  File "C:\Users\manue\miniconda3\Lib\site-packages\pyvisa_py\tcpip.py", line 1060, in after_parsing
+    raise Exception("could not connect: {0}".format(str(ret_status)))
+Exception: could not connect: -1073807339
+DEBUG:pyvisa:Closing ResourceManager (session: 1257503)
