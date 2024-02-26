@@ -273,18 +273,20 @@ temp_list = []
 peaks_loc_list = []
 peak_val_list = []
 
+# iniciar medida
+fs22.write(":ACQU:STAR")
+fs22.write(":ACQU:RECA")
+
 for sample_index in range(args.samples):
 
-    # iniciar medida
-    fs22.write(":ACQU:STAR")
-    fs22.write(":ACQU:RECA")
 
     traces_list.append(fs22.query(":ACQU:OSAT:CHAN:0?").replace(":ACK:", ""))
     temp_list.append(fs22.query(":ACQU:ENGI:CHAN:0?").replace(":ACK:", ""))
     peak_val_list.append(fs22.query(":ACQU:POWE:CHAN:0?").replace(":ACK:", ""))
     peaks_loc_list.append(fs22.query(":ACQU:WAVE:CHAN:0?").replace(":ACK:", ""))
+    time.sleep(1)
 
-    fs22.write(":ACQU:STOP")
+fs22.write(":ACQU:STOP")
 
 with open(str(args.temperature) + "_os", "w", newline="") as csvfile:
     # Create a CSV writer object
