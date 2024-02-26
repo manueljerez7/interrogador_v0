@@ -6826,3 +6826,1517 @@ DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status 
 DEBUG:pyvisa:Closing ResourceManager (session: 8855976)
 DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
 DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+INFO:root:Openning session
+DEBUG:pyvisa:SerialSession was correctly imported.
+DEBUG:pyvisa:USBSession and USBRawSession were not imported No backend available.
+DEBUG:pyvisa:TCPIPSession was correctly imported.
+DEBUG:pyvisa:GPIBSession was not imported 'MockGPIB' object is not subscriptable.
+DEBUG:pyvisa:Created library wrapper for py
+DEBUG:pyvisa:Created ResourceManager with session 2733518
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 8871432
+INFO:root:Configuring meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 3543275
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+INFO:root:Checking configuration ... 
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:root:Command: :IDEN?
+DEBUG:root:Response: :ACK:HBM FiberSensing:FS22SI v3.0:01:046 840 200 724:20190116
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:root:Command: :STAT?
+DEBUG:root:Response: 
+:ACK:1
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:root:Command: :ACQU:STAR
+DEBUG:root:Response: 
+:ACK
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:root:Command: :RECA
+DEBUG:root:Response: 
+:ACK
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:root:Command: :ACQU:CONF:THRE:CHAN:0?
+DEBUG:root:Response: 
+:ACK:6.0
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:root:Command: :ACQU:CONF:RANG:WAVE:0?
+DEBUG:root:Response: 
+:ACK:1518.000,1528.000,1528.100,1538.000,1538.100,1548.000,1548.100,1558.000,1558.100,1568.000
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:root:Command: :ACQU:CONF:RANG:FORM:0?
+DEBUG:root:Response: 
+:ACK:[1519.797974;692977411*(x/1519.798)^3-9826398.4*(x/1519.798)^2+148320.032*(x/1519.798)+26.36818],[1529.850952;727578545*(x/1529.851)^3-10066925.1*(x/1529.851)^2+148314.379*(x/1529.851)+26.3695995],[1540.073975;678270676*(x/1540.074)^3-9659849.89*(x/1540.074)^2+146875.642*(x/1540.074)+24.0154783],[1549.952026;726888594*(x/1549.952)^3-9981754.88*(x/1549.952)^2+147572.967*(x/1549.952)+24.0207569],[1559.837036;733809657*(x/1559.837)^3-10109602.2*(x/1559.837)^2+148422.232*(x/1559.837)+24.820426]
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:root:Command: :ACQU:CONF:RANG:STAT?
+DEBUG:root:Response: 
+:ACK:1
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:root:Command: :ACQU:STOP
+DEBUG:root:Response: 
+:ACK
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+INFO:root:... 
+:ACK:1
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 3318712
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 6563544
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 2996552
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 8301892
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 4091776
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 4330942
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 6098998
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 2804628
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 7421301
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 2689027
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 8292829
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 6394305
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 5892903
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 3582713
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 3116956
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 2476736
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 7913440
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 1290020
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 1480528
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 4382692
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 3819279
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 5099560
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 6567022
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 1189547
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 2422861
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 5530665
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 4333609
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 2233725
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 5153408
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 4433491
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 5166222
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 8627328
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 7188196
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 8222050
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 1541727
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 8274075
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 4110391
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 9487618
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 2522829
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 1355048
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 1267993
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 5621267
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 5383288
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 8787041
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 6357400
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 7586745
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 1001583
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 2034312
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 4247260
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 4441316
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 7136589
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 1136522
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 7122292
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 7646376
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 5561698
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 2934293
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 6754615
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 2326250
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 9155051
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 6104225
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 4753775
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 8167027
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 1751372
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 9259953
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 9303894
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 9751984
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 4440694
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 1425806
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 2266376
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 4650648
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 7079110
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 8320197
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 6587098
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 6312307
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 7753310
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 4482054
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 4190105
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 8047024
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 7304618
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 3875704
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 3234390
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 3159072
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 5669974
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 7463111
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 6689118
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 9355513
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 6437562
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 5578272
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 4182616
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 2490388
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 3130705
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 7546179
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 3224121
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 2987269
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 5325751
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 7528345
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 2770223
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 6770234
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 1177677
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 8684618
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 1833794
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 2495486
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 9314006
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 9292185
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 2827674
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 4448604
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 9205342
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 7931882
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 7480290
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 8914810
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 9678517
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 5827598
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 2847180
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 6015603
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 6202268
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 5507445
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 9838497
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 9719411
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 2174576
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 9246696
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 5773800
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 5380138
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 1962889
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 9070413
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 9137052
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 1702244
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 8750851
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 1303160
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 1042011
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 5398361
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 7607976
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 1122824
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 3314053
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 4926694
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 9725663
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 2354871
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 9140489
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 8704313
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 9277189
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 7488231
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 2808747
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 7622958
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 5962344
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 2264155
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 7898168
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 8259390
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 2543337
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 6715990
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STAR to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 5314526
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:RECA to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - opening ...
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is open with session 7230953
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
+DEBUG:root:Sending command :ACQU:STOP to meter
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - reading 20480 bytes (last status <StatusCode.success_max_count_read: 1073676294>)
+DEBUG:pyvisa:Closing ResourceManager (session: 2733518)
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - closing
+DEBUG:pyvisa:TCPIP0::10.0.0.10::3500::SOCKET - is closed
