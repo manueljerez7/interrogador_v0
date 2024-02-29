@@ -9,7 +9,7 @@ import logging
 import csv
 import configparser
 import argparse
-
+from plotGraph import plotGraph
 DELAY = 0.1
 
 
@@ -316,3 +316,5 @@ gen_csv_zip(str(args.temperature),
      str(args.temperature) + "_temp",
      str(args.temperature) + "_loc",
      str(args.temperature) + "_peaks"])
+
+plotGraph(str(args.temperature)+".zip",str(args.temperature) + "_temp.csv",0)
