@@ -284,6 +284,7 @@ for sample_index in range(args.samples):
     temp_list.append(fs22.query(":ACQU:ENGI:CHAN:0?").replace(":ACK:", ""))
     peak_val_list.append(fs22.query(":ACQU:POWE:CHAN:0?").replace(":ACK:", ""))
     peaks_loc_list.append(fs22.query(":ACQU:WAVE:CHAN:0?").replace(":ACK:", ""))
+    print(sample_index)
     time.sleep(1)
 
 fs22.write(":ACQU:STOP")
@@ -317,4 +318,4 @@ gen_csv_zip(str(args.temperature),
      str(args.temperature) + "_loc",
      str(args.temperature) + "_peaks"])
 
-plotGraph(str(args.temperature)+".zip",str(args.temperature) + "_temp.csv",0)
+plotGraph(str(args.temperature)+".zip",str(args.temperature) + "_temp.csv",1)
