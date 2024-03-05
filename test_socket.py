@@ -318,4 +318,4 @@ gen_csv_zip(str(args.temperature),
      str(args.temperature) + "_loc",
      str(args.temperature) + "_peaks"])
 
-plotGraph(str(args.temperature)+".zip",str(args.temperature) + "_temp.csv",1)
+plotGraph(str(args.temperature)+".zip",str(args.temperature) + "_temp.csv",0)
