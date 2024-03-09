@@ -10,3 +10,5 @@ Ficheros:
 - test_socket.py - Fichero para ejecución de medidas en interrogador óptico
 - readTraces.py - Funciones de apoyo para la conversión de ficheros generados por el interrogador a csv adecuado para la lectura y compresión
 - plotGRaph.py - Función para dibujar temperatura al final de la ejecución
+
+**Análisis de resultados en carpeta Análisis/**
