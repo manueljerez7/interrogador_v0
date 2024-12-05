@@ -6,7 +6,7 @@ temp_avg=mean(temp);
 plot(s,temp,'LineWidth',1)
 hold on
 plot(s,temp_avg*ones(length(temp),1),'r.','LineWidth',2)
-legend('Temperature measured by thermocouple','Mean temperature')
+legend('Temperature of the furnace','Mean temperature')
 ylabel('Temperature [ºC]')
 xlabel('Sample')
 title('Temperature evolution')

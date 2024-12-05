@@ -12,10 +12,10 @@ def plotGraph(archivo_zip, nombre_csv, indice_columna):
     df = pd.read_csv(nombre_csv, header=None)
 
     # Extrae la columna especificada por índice
-    columna_data = df.iloc[:, indice_columna]
-
+    for i in indice_columna:
+        columna_data = df.iloc[:, i]
     # Crea la gráfica con matplotlib
-    plt.plot(columna_data)
+        plt.plot(columna_data)
     plt.xlabel('Numero de muestra')
     plt.ylabel(f'Temperatura [ºC]')
     plt.title(f'Temperatura')
